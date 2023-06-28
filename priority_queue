@@ -1,0 +1,43 @@
+priority_queue<ll> pq;
+    
+    // inserting elements
+    pq.push(5);
+    pq.push(5);
+    pq.push(9); O(log N)
+    
+    //printing elements
+    while(pq.size())
+    {
+        cout<<pq.top()<<" ";
+        pq.pop();// Deletes the first element of pq.
+    }
+    
+    // Deleting elements
+    pq.pop(); O(log N)
+    
+    // accessing elements
+    pq.top(); O(log N)
+    
+    // pq is implemented as max heap by default.
+    // The first element of the pq is the greatest element.
+    
+    
+    
+    // creating a min heap for the pq.
+    priority_queue<ll,vector<ll>,greater<ll>> gq;
+    
+    // Elements in min heap are stored in non decreasing order
+    
+    
+    // swapping the elements of two priority_queue.
+    pq.swap(gq); T.C -> O(1)
+    
+    
+    // priority_queue is usually faster than normal set or multiset.
+    
+    // optimisation which may help in the future
+      put elements of an array/vector in pq like this 
+       // for array
+       priority_queue<ll> pq(arr,arr+N); T.C.-> O(N)
+       // for vector
+       priority_queue<ll> pq(v.begin(),v.end()); T.C. ->O(N)

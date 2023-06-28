@@ -29,6 +29,7 @@ using namespace __gnu_pbds;
 
 // removing elements
 // s.erase(3) (the element 3 will be removed from the oset iff it is present otherwise nothing will happen);
+// values can also be deleted using an iterator.
 
 // oset can be used for any datatype.
 // oset is a bit slow than normal set.

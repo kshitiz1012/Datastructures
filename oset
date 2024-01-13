@@ -33,3 +33,5 @@ using namespace __gnu_pbds;
 
 // oset can be used for any datatype.
 // oset is a bit slow than normal set.
+
+// You cannot delete values using iterators in ordered multiset.

@@ -6,6 +6,8 @@ using namespace __gnu_pbds;
 #define oset tree<ll,null_type,less<ll>,rb_tree_tag,tree_order_statistics_node_update>
 
 // BELOW ARE SOME IMPORTANT INFORMATION ABOUT OSET
+// REMEMBER IN MULIT ORDERED SET values can only be deleted as follows:-
+   st.erase(st.upper_bound(value));
 
 // extra functions
 // 1) A.order_of_key(n);
